@@ -18,16 +18,12 @@ public class Player : MonoBehaviour
     {
         direction.x = Input.GetAxis("Horizontal");
         direction.y = Input.GetAxis("Vertical");
-    }
+    } 
     private void FixedUpdate()
     {
         rigidbody.AddForce(direction * force * Time.deltaTime);
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("Player hit by" + collision.gameObject);
-        Destroy(gameObject);
-    }
+   
 
 
 }
