@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8086169193279973937}
   - component: {fileID: 8623826864917797260}
   - component: {fileID: 8744909558873664657}
+  - component: {fileID: 2574952042890653321}
   m_Layer: 7
   m_Name: Glass
   m_TagString: Untagged
@@ -157,3 +158,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2574952042890653321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775911393266525194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8661203241a98244b476ec37c05a5da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlassPrefab: {fileID: 0}
+  spawn: {fileID: 0}
+  rigidbody: {fileID: 0}
