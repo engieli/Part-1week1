@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         direction.x = Input.GetAxis("Horizontal");
-        direction.y = Input.GetAxis("Vertical");
+      
     } 
     private void FixedUpdate()
     {
