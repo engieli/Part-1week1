@@ -9,24 +9,31 @@ public class Catfluffy : MonoBehaviour
     public GameObject Catblocker;
     public GameObject Blackcat;
     private bool collided = true;
+    public SpriteRenderer catRenderer;
+    private float time = 10;
 
 
     public Transform spawn;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
 
     // Update is called once per frame
+    void Update()
+    {
+        time += Time.deltaTime;
+        if (time >= 2)
+        {
+            catRenderer.enabled = true;
+
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Instantiate(CatfluffyPrefab, Catspawn.position, Catspawn.rotation);
-        if (collision.gameObject.CompareTag("obsticle"))
-        {
-            collided = false;
-            Destroy(gameObject);
-        }
+
+        //Instantiate(CatfluffyPrefab, Catspawn.position, Catspawn.rotation);
+            catRenderer.enabled = false;
+            time = 0;
+            //collided = false;
+            //Destroy(gameObject);
         
     }
   //private void OnTriggerEnter2D(Collider2D collision)
