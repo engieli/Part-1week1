@@ -1,12 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Glassfall : MonoBehaviour
 {
     public GameObject GlassPrefab;
+   
     public Transform spawn;
+   
 
     // Start is called before the first frame update
     private void Start()
@@ -25,5 +28,7 @@ public class Glassfall : MonoBehaviour
         Instantiate(GlassPrefab, spawn.position, spawn.rotation);
         
         Destroy(gameObject);
+
     }
+    
 }
